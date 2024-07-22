@@ -1,0 +1,81 @@
+@import "./../UI/constant/var.css";
+
+.clicked {
+    height: fit-content;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-primary);
+    flex-direction: column;
+  }
+  
+.clicked-container {
+    margin-top:6rem;
+    border-radius: 5px;
+    width: 80%;
+  
+    background: var(--color-matte-black);
+    padding: 3rem;
+  }
+
+.clicked-product-name{
+  margin-top:30px;
+  /* border:2px solid white; */
+}  
+
+.clicked-product-name h1{
+    color:white;
+}
+
+.product-redirect {
+    margin-top: 2rem;
+    align-self: center;
+  }
+
+.clicked-product-img{
+  position:relative;
+  top:20px;
+  left:-20px;
+  width:600px;
+  height:400px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: rgb(194,101,14);
+background: linear-gradient(90deg, rgba(194,101,14,1) 0%, rgba(242,0,0,1) 0%, rgba(9,8,8,1) 0%, rgba(88,75,75,1) 52%, rgba(1,1,1,1) 93%);
+transition: 0.5s;
+  }
+
+.clicked-product-img:hover{
+  transform: scale(1.05);
+  cursor:pointer;
+}  
+
+.clicked-product-img img{
+  max-width:80%;
+  max-height:80%;
+} 
+
+.img-desc{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.clicked-product-desc{
+  width:400px;
+  height:400px;
+  position:relative;
+  top:120px;
+  left:50px;
+}
+
+.clicked-product-desc p{
+  color:white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

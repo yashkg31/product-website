@@ -1,0 +1,161 @@
+@import "../UI/constant/var.css";
+.header {
+  z-index: 2000;
+  background: var(--color-matte-black-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.ham-menu-icon {
+  display: none;
+}
+.header-container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+
+  width: 80%;
+}
+.header-links {
+  flex: 0.8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav-links {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor:pointer;
+}
+.header-nav-links a {
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.header-touch {
+  height: 100%;
+  width: 100px;
+
+  background: var(--bg-primary);
+
+  color: white;
+  display: flex;
+  right:20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  float:right;
+}
+
+.header-brand{
+  position:relative;
+  left:-10px;
+}
+
+.header-brand img {
+  width: 300px;
+}
+.nav-link {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+
+  font-size: 1.1rem;
+}
+.nav-link a {
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.nav-link:hover {
+  background: var(--bg-primary);
+  --webkit-animation: fadein 500ms;
+  animation: fadein 500ms;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.nav-link:hover a {
+  color: white;
+}
+
+.header-touch {
+  cursor: pointer;
+  width: 120px;
+  transition: all 0.2s;
+}
+
+.header-touch {
+  margin-left: 20px;
+}
+
+.header-touch:hover{
+  transform:scale(1.03);
+}
+.header-touch span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none !important;
+}
+
+.header-touch span:hover{
+  color:white;
+}
+.header-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .header {
+    height: 10vh;
+  }
+  .header-container {
+    width: 90%;
+  }
+  .ham-menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+  }
+  .header-brand img {
+    margin-top: 3px;
+    width: 200px;
+  }
+  .header-links {
+    display: none;
+  }
+}

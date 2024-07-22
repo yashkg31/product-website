@@ -1,0 +1,38 @@
+@import "./../../UI/constant/var.css";
+
+.construction{
+    position:relative;
+    height:800px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.construction-heading{
+    margin:4rem auto;
+}
+
+.construction-heading h2{
+    color:white;
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+
+.construction-image{
+    height:400px;
+    width:600px;
+    transition:all .2s;
+    cursor:pointer;
+}
+
+.construction-image:hover{
+    background-color: rgb(80, 74, 74);
+    transform: scale(1.05);
+}
+
+.construction-image img{
+    max-width: 100%;
+    max-height:100%;
+
+}

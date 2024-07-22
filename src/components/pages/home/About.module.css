@@ -1,0 +1,210 @@
+@import "../../UI/constant/var.css";
+.about {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-container {
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: var(--font-primary);
+}
+.container-wrap {
+  width: 80%;
+}
+.about-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0.8;
+}
+.about-heading h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-secondary);
+}
+.about-desc-highlight p {
+  line-height: 2rem;
+  text-align: start;
+  font-size: 1.2rem;
+  /* color: var(--color-secondary); */
+  color: var(--color-font-grayish);
+}
+.about-desc p {
+  text-align: start;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: var(--color-secondary-lite);
+}
+
+.about-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.about-right-container {
+  position: relative;
+}
+.img-hero::after {
+  position: absolute;
+  content: "";
+  background-image: url(../../assets/images/hero_arrow.png);
+  left: 0;
+  right: 0;
+
+  bottom: -26px;
+  height: 57px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: slide1 1s ease-in-out infinite;
+  margin-left: 0px;
+}
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(5px, 0);
+    -webkit-transform: translate(5px, 0);
+    -moz-transform: translate(5px, 0);
+    -ms-transform: translate(5px, 0);
+    -o-transform: translate(5px, 0);
+  }
+}
+.about-right-container img {
+  height: 100%;
+}
+.img-hero {
+  position: absolute;
+  bottom: -6rem;
+  left: -80px;
+  top: 50%;
+
+  background: var(--bg-primary);
+  overflow: hidden;
+  width: 400px;
+  padding: 10px;
+  height: fit-content;
+}
+.img-hero-container {
+  position: relative;
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  --webkit-animation: popIn 1000ms;
+  animation: popIn 1000ms;
+}
+@keyframes popIn {
+  from {
+    bottom: -10rem;
+  }
+  to {
+    bottom: 0;
+  }
+}
+.img-hero-icon {
+  display: flex;
+  justify-content: flex-start;
+}
+.img-hero-heading h1 {
+  color: white;
+  font-size: 3rem;
+  font-family: "Teko", sans-serif;
+  line-height: 3rem;
+}
+.img-hero-desc {
+  margin-bottom: 20px;
+}
+.img-hero-desc p {
+  font-size: 1.2rem;
+  text-align: start;
+  color: var(--color-secondary);
+}
+
+.about-nav-btn {
+  cursor: pointer;
+  margin-top: 3rem;
+  background: var(--color-secondary);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 25px;
+  box-shadow: -10px 10px 0px var(--color-primary);
+}
+
+.about-nav-btn:hover {
+  transition: ease-in 100ms;
+  box-shadow: -10px -10px 0px var(--color-primary);
+}
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap");
+.about-nav-btn a {
+  font-size: 1.5rem;
+  color: #4ceb4c;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+
+.auto-img {
+  position: relative;
+  object-fit: contain;
+  width: 500px;
+}
+
+@media (max-width: 500px) {
+  .about {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-container {
+    height: fit-content;
+    width: 100%;
+  }
+  .about-heading {
+    width: 90%;
+  }
+  .about-heading h1 {
+    font-size: 2rem;
+    text-align: start;
+  }
+  .about-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 90%;
+    height: fit-content;
+  }
+  .about-right-container img {
+    width: 80%;
+    display: none;
+  }
+  .img-hero {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: fit-content;
+  }
+  .about-desc-highlight {
+    margin-top: 2rem;
+  }
+
+  .about-nav-btn {
+    align-self: center;
+  }
+  .container-wrap {
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

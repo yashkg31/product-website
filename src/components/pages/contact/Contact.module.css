@@ -1,0 +1,30 @@
+@import "./../../UI/constant/var.css";
+
+.contact{
+    margin:10px auto;
+    padding:10px 10px;
+    position:relative;
+    top:220px;
+    height:540px;
+}
+
+.form-label{
+    color:white;
+}
+
+.header-contact{
+    position:relative;
+    /* border:2px solid white; */
+    top:-40px;
+}
+
+.header-contact h1{
+    font-size: 3.2rem;
+    font-weight: 600;
+    font-style: italic;
+    color:white;
+}
+
+.btn-primary .btn-primary:hover .btn-primary:active .btn-primary:visited{
+position: relative;
+}

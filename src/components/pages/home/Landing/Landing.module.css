@@ -1,0 +1,152 @@
+@import "../../../UI/constant/var.css";
+.landing {
+  position: relative;
+
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 90vh;
+}
+.landing-container {
+  margin-top: 4rem;
+  width: 80%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+.landing-banner {
+  margin-top: 10rem;
+  display: flex;
+  position: relative;
+  width: 500px;
+
+  height: fit-content;
+  z-index: 10;
+
+  background-image: var(--bg-primary);
+  overflow: hidden;
+}
+
+.landing-banner::after {
+  position: absolute;
+  content: "";
+  background-image: url(../../../assets/images/hero_arrow.png);
+
+  left: 0;
+  right: 0;
+
+  bottom: -26px;
+  height: 57px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: slide1 1s ease-in-out infinite;
+  margin-left: 0px;
+}
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(5px, 0);
+    -webkit-transform: translate(5px, 0);
+    -moz-transform: translate(5px, 0);
+    -ms-transform: translate(5px, 0);
+    -o-transform: translate(5px, 0);
+  }
+}
+.banner-container {
+  position: relative;
+  margin: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  --webkit-animation: popIn 1000ms;
+  animation: popIn 1000ms;
+}
+@keyframes popIn {
+  from {
+    bottom: -10rem;
+  }
+  to {
+    bottom: 0;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap");
+.banner-heading h1 {
+  font-size: 4.5rem;
+  font-family: "Teko", sans-serif;
+  color: white;
+  line-height: 3.5rem;
+  margin: 0;
+  text-align: start;
+  letter-spacing: 5px;
+}
+.banner-caption p {
+  font-size: 1.2rem;
+  color: white;
+}
+.banner-nav {
+  cursor: pointer;
+  margin-top: 2rem;
+  background: var(--color-secondary);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 25px;
+
+  box-shadow: -15px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.banner-nav:hover {
+  transition: ease-in 100ms;
+
+  box-shadow: 15px 10px 0px rgba(0, 0, 0, 0.1);
+}
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap");
+.banner-nav a {
+  font-size: 1.5rem;
+  color: var(--color-quart);
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 500px) {
+  .landing {
+    height: 95vh;
+  }
+  .landing-container {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: var(--bg-primary); */
+  }
+  .landing-banner {
+    background: transparent;
+    height: 80vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+  }
+  .banner-heading h1 {
+    font-size: 4rem;
+  }
+  .banner-caption {
+    margin-top: 1rem;
+  }
+  .banner-caption p {
+    font-size: 1.4rem;
+    text-align: start;
+  }
+  .landing-banner::after {
+    display: none;
+  }
+}

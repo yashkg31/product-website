@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap");
+:root {
+  /* --bg-primary: linear-gradient(109.6deg, #048b05 11.2%, #87fe88 91.1%); */
+  /* --color-primary: #f27420; */
+  --bg-primary: linear-gradient(to right top, #49c628 10%, #3feb3f 100%);
+  --bg-primary-glass: linear-gradient(
+    #3feb3f,
+    #3bdd3b 40%,
+    #3ad33a 3%,
+    #49c628
+  );
+  --color-primary: #00ff40;
+  /* --color-secondary: #100c08; */
+  --color-secondary: white;
+  --color-secondary-lite: #677294;
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Roboto Mono", monospace;
+  --color-tertiary: rgb(27, 27, 27);
+  --color-quart: #49c628;
+  --color-font-grayish: rgb(223, 217, 217);
+  --color-matte-black: #171717;
+  --color-matte-black-dark: #121212;
+  --color-font-grayish: rgb(223, 217, 217);
+}

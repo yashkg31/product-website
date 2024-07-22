@@ -1,0 +1,24 @@
+@import "../UI/constant/var.css";
+.topbar {
+  width: 100%;
+  background: var(--bg-primary);
+  display: flex;
+  justify-content: space-around;
+  color: var(--color-matte-black);
+  align-items: center;
+  height: 3rem;
+  font-weight: 500;
+}
+.company-contact {
+  display: flex;
+  position: relative;
+  top:8px;
+}
+.company-contact span {
+  margin: 0 20px;
+}
+@media (max-width: 500px) {
+  .topbar {
+    display: none;
+  }
+}

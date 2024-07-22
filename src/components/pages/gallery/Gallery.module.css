@@ -1,0 +1,42 @@
+@import "../../UI/constant/var.css";
+
+.gallery{
+    position:relative;
+    top:170px;
+    height:1500px;
+    margin:10px 10px 10px 10px;
+}
+
+.gallery-header{
+    padding-bottom: 20px;
+}
+
+.gallery-header span{
+    font-size: 3rem;
+    font-weight: 800;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card{
+    transition:all 0.2s !important;
+}
+
+.card:hover{
+    cursor:pointer !important;
+    transform: scale(1.05) !important;
+}
+
+.card-body h5{
+    color:white !important;
+    font-size: 1.5rem;
+}
+
+.card-title{
+    padding:10px 10px;
+}
+
+.card-body p{
+    color:white !important;
+
+}
